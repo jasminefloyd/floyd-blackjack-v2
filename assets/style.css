@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.board {
+    height: 550px;
+    width: 350px;
+    background-image: url("./images/table.png");
+    background-size: cover;
+    background-position: center;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin: auto; 
+}
+
+h1 {
+    color: goldenrod;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+}
+
+button {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
+.tooltip {
+    visibility: hidden;
+    background-color: aliceblue;
+    max-width: 80%;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin: auto;
+    height: 450px;
+    width: 350px;
+}
+
+p {
+    font-weight: bold;
+    color: white;
+}
+
+
+li {
+    list-style-type: none;
+    max-width: 85%;
+    line-height: 20px;
+}
+
+.styledTextBox {
+    width: 200px;
+    height: 15px;
+    padding: 5px 10px; /* Add some padding for better readability */
+    position: relative;
+    margin-bottom: 12px; 
+    border: 1px solid black;
+    border-radius: 5px; /* Make the corners rounded */
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+#playBoard, #gameBoard {
+    display: none;
+}

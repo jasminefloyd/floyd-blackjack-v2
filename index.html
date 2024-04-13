@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floyd's Blackjack 2.0</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <div id="gameBoard" class="board">
+        <h1>Floyd's 21 Blackjack</h1>
+        <p>Player Name</p>
+        <p>Player Chips</p>
+        <h2 id="playerCounter">Player Total</h2>
+        <p id="playerCards">player cards</p>
+        <p id="playerGameMessage">Player outcome message</p>
+        <h2 id="dealerCounter">Dealer Total</h2>
+        <p id="dealerCards">dealer cards</p>
+        <p id="dealerGameMessage">Dealer outcome message</p>
+        <button id="hitBtn" onclick="playerHit()">Hit</button>
+        <button id="stayBtn" onclick="checkDealer()">Stay</button>
+    </div>
+
+    <div id="playBoard" class="board">
+        <h1>Place your Bets!</h1>
+        <p>Enter your Bet amount <span>(Bet Minimum is $5)</span>:</p> 
+        <p>Press Deal Cards to Start</p>
+        <input type="text" id="playerBet" class="styledTextBox" placeholder="Please your bet amount" value="$ ">
+        <button id="startBtn" onclick="dealCards()">Start Game</button>
+    </div>
+
+    <div id="startBoard" class="board">
+        <h1>Welcome Message</h1>
+        <h2>Ready to play a game of Blackjack?</h2>
+        <p>Enter your name below and press Start Game</p>
+        <input type="text" id="playerName" class="styledTextBox" placeholder="Please enter your name">
+        <button id="playBtn" onclick="playGame()">Let's Play</button>
+        <hr />
+        <div id="" class="tooltip">
+            <p id="">Blackjack Rules</p>
+            <ul>
+                <li>Goal: Get 21 or higher than the dealer without going over 21.</li>
+                <li>Cards: Numbers are their value, face cards = 10, Ace = 1 or 11</li>
+                <li>Chips: Each player will start at $300 chips. Minimum bet is $5. Game is 2:1</li>
+                <li>Player's Turn: Tap "Hit" for another card or "Stay" to keep your total</li>
+                <li>Dealer: Must draw until their hand is 17 or higher</li>
+                <li>To Win: If you're dealt 21, BLACKJACK!! - you instantly win! If you're closer to 21 than the dealer, or if the dealer busts (goes over 21)</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./assets/index.js"></script>
+</body>
+</html>
