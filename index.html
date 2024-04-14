@@ -9,31 +9,30 @@
 <body>
     <div id="gameBoard" class="board">
         <h1>Floyd's 21 Blackjack</h1>
-        <p>Player Name</p>
-        <p>Player Chips</p>
+        <p id="playerNameLabel">Player Name</p>
+        <p id="playerChipsLabel">Player Chips</p>
+        <p id="playerCurrentBid">0</p>
         <div id="playerContainer">
             <h2 id="playerCounter">Player Total</h2>
             <p id="playerCards">player cards</p>
             <p id="playerGameMessage">Player outcome message</p>
-        </div>
-        <!-- Commenting out the Dealer Section for now 
-        <div id="dealerContainer">
-        <h2 id="dealerCounter">Dealer Total</h2>
-        <p id="dealerCards">dealer cards</p>
-        <p id="dealerGameMessage">Dealer outcome message</p>
-        </div>
-        -->
+         </div>
         <button id="hitBtn" onclick="playerHit()">Hit</button>
-        <button id="stayBtn" onclick="checkBlackJack()">Stay</button>
+        <button id="stayBtn" onclick="playerStay()">Stay</button>
+        <button id="rePlay" onclick="playGame()">Play Again</button>
     </div>
+
 
     <div id="playBoard" class="board">
         <h1>Place your Bets!</h1>
         <p>Enter your Bet amount <span>(Bet Minimum is $5)</span>:</p> 
         <p>Press Deal Cards to Start</p>
-        <input type="text" id="playerBet" class="styledTextBox" placeholder="Please your bet amount" value="$ ">
-        <button id="startBtn" onclick="dealCards()">Start Game</button>
+        <input type="number" id="playerBet" class="styledTextBox" placeholder="Please your bet amount">
+        <button id="startBtn" onclick="dealPlayerCards()">Start Game</button>
     </div>
+
+
+
 
     <div id="startBoard" class="board">
         <h1>Welcome Message</h1>

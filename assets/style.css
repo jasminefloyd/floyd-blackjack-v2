@@ -38,6 +38,10 @@ button {
     border-radius: 5px;
 }
 
+#rePlay {
+    visibility: hidden;
+}
+
 
 .tooltip {
     visibility: hidden;
@@ -76,6 +80,6 @@ li {
     font-style: italic;
 }
 
-#playBoard, #gameBoard {
+/* #playBoard, #gameBoard {
     display: none;
-}
+} */
