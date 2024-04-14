@@ -11,14 +11,20 @@
         <h1>Floyd's 21 Blackjack</h1>
         <p>Player Name</p>
         <p>Player Chips</p>
-        <h2 id="playerCounter">Player Total</h2>
-        <p id="playerCards">player cards</p>
-        <p id="playerGameMessage">Player outcome message</p>
+        <div id="playerContainer">
+            <h2 id="playerCounter">Player Total</h2>
+            <p id="playerCards">player cards</p>
+            <p id="playerGameMessage">Player outcome message</p>
+        </div>
+        <!-- Commenting out the Dealer Section for now 
+        <div id="dealerContainer">
         <h2 id="dealerCounter">Dealer Total</h2>
         <p id="dealerCards">dealer cards</p>
         <p id="dealerGameMessage">Dealer outcome message</p>
+        </div>
+        -->
         <button id="hitBtn" onclick="playerHit()">Hit</button>
-        <button id="stayBtn" onclick="checkDealer()">Stay</button>
+        <button id="stayBtn" onclick="checkBlackJack()">Stay</button>
     </div>
 
     <div id="playBoard" class="board">
