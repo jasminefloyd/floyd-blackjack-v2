@@ -1,11 +1,13 @@
 body {
+    margin: 0;
+    padding: 10px;
     background-color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    height: 100vh;
 }
 
 .board {
+    position: absolute;
     height: 550px;
     width: 350px;
     background-image: url("./images/table.png");
@@ -13,7 +15,8 @@ body {
     background-position: center;
     border: 2.5px solid black;
     border-radius: 10px;
-    margin: auto; 
+    margin: 100px;
+    max-width: 80%;
 }
 
 h1 {
@@ -80,6 +83,7 @@ li {
     font-style: italic;
 }
 
-/* #playBoard, #gameBoard {
-    display: none;
-} */
+#playBoard, #gameBoard {
+    visibility: hidden;
+} 
+
